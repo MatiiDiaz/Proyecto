@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E0A1E"
+    tools:context=".ListadeCompras">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cosas Por Comprar"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="409dp"
+        android:layout_height="540dp"
+        android:text="Ola"
+        tools:itemCount="7"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="62dp"
+        tools:listitem="@layout/recycler_view_item" />
+
+</android.support.constraint.ConstraintLayout>

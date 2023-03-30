@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Proyecto</string>
+    <string name="button2">Lista de Compras</string>
+    <string name="button3">Lugares de Interes</string>
+    <string name="button4">Productos</string>
+    <string name="button5">Inventario</string>
+    <string name="button6">Recordatorios</string>
 </resources>
