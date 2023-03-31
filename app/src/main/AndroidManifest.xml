@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Proyecto"
         tools:targetApi="31">
         <activity
+            android:name=".LugaresInteres"
+            android:exported="false" />
+        <activity
             android:name=".ListadeCompras"
             android:exported="false" />
         <activity
