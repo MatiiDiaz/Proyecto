@@ -10,15 +10,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     Button buttonListaCompras;
     Button buttonLugaresInteres;
+    Button buttonListaProductos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        buttonListaCompras = (Button)findViewById(R.id.button2);
-        buttonLugaresInteres = (Button)findViewById(R.id.button3);
+        buttonListaCompras = findViewById(R.id.button2);
         buttonListaCompras.setOnClickListener(this);
+
+        buttonLugaresInteres = findViewById(R.id.button3);
         buttonLugaresInteres.setOnClickListener(this);
+
+        buttonListaProductos = findViewById(R.id.button4);
+        buttonListaProductos.setOnClickListener(this);
     }
     @Override
     public void onClick(View v){
@@ -30,6 +35,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button3:
                 Intent lugaresInteres = new Intent(MainActivity.this,LugaresInteres.class);
                 startActivity(lugaresInteres);
+                break;
+            case R.id.button4:
+                Intent listaProductos = new Intent(MainActivity.this,ListadeProductos.class);
+                startActivity(listaProductos);
                 break;
         }
     }
