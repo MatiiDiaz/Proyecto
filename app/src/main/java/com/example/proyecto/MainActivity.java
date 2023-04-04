@@ -58,12 +58,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button5:
                 Intent listaInventarios = new Intent(MainActivity.this, Inventarios.class);
                 startActivity(listaInventarios);
+                break;
             case R.id.button6:
                 Intent listaRecordatorios = new Intent(MainActivity.this,Recordatorios.class);
                 startActivity(listaRecordatorios);
+                break;
             case R.id.button7:
                 Intent listaCerrarSesion = new Intent(MainActivity.this,Autenticador.class);
                 startActivity(listaCerrarSesion);
+                break;
         }
     }
 
