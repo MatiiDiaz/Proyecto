@@ -1,11 +1,8 @@
-package com.example.proyecto;
+package com.example.ShopHelp;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.icu.util.Calendar;
-import androidx.annotation.NonNull;
-import androidx.fragment.app.DialogFragment;
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -15,6 +12,12 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
+
+import com.example.ShopHelp.R;
 
 import java.util.ArrayList;
 import java.util.List;

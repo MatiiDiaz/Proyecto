@@ -3,15 +3,15 @@ plugins {
 }
 
 android {
-    namespace 'com.example.proyecto'
+    namespace 'com.example.ShopHelp'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.proyecto"
+        applicationId 'com.example.ShopHelp'
         minSdk 27
         targetSdk 33
         versionCode 1
-        versionName "1.0"
+        versionName '1.1'
 
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }

@@ -1,4 +1,4 @@
-package com.example.proyecto;
+package com.example.ShopHelp;
 
 import org.junit.Test;
 

@@ -6,7 +6,7 @@
     app:startDestination="@id/mainActivity2">
     <activity
         android:id="@+id/mainActivity2"
-        android:name="com.example.proyecto.MainActivity"
+        android:name="com.example.ShopHelp.MainActivity"
         android:label="activity_main"
         tools:layout="@layout/activity_main" />
     <action
@@ -14,7 +14,7 @@
         app:destination="@id/listadeCompras2" />
     <activity
         android:id="@+id/listadeCompras2"
-        android:name="com.example.proyecto.ListadeCompras"
+        android:name="com.example.ShopHelp.ListadeCompras"
         android:label="activity_listade_compras"
         tools:layout="@layout/activity_listade_compras" />
 </navigation>

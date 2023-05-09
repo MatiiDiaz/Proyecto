@@ -1,4 +1,4 @@
-package com.example.proyecto;
+package com.example.ShopHelp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.Toast;
+
+import com.example.ShopHelp.R;
 
 import java.util.ArrayList;
 import java.util.List;
