@@ -2,6 +2,8 @@ package com.example.ShopHelp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -12,6 +14,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.ShopHelp.R;
+import com.example.ShopHelp.database.DBHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,6 +44,8 @@ public class ListadeCompras extends AppCompatActivity implements View.OnClickLis
     }
 
     public void onClick(View v) {
+        DBHelper dbHelper = new DBHelper(ListadeCompras.this);
+        SQLiteDatabase database = dbHelper.getWritableDatabase();
         if (v.getId() == R.id.button_añadir_compra) {
             String nombre = etNombreCompra.getText().toString().trim();
             String pagado = etTotalPagado.getText().toString().trim();

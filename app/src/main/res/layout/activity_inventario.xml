@@ -35,29 +35,42 @@
 
     <EditText
         android:id="@+id/etCantidad"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="207dp"
+        android:layout_height="42dp"
         android:layout_marginTop="8dp"
         android:contentDescription="Cantidad del Producto"
         android:ems="10"
         android:gravity="center"
         android:hint="Cantidad"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etNombreInventario"
         tools:text="Cantidad" />
 
     <EditText
-        android:id="@+id/etDescripcionInventario"
+        android:id="@+id/etPrecioInventario"
+        android:layout_width="207dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Precio del Producto"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Precio"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etCantidad"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreInventario"
+        tools:text="Precio" />
+
+    <EditText
+        android:id="@+id/etMarca"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:contentDescription="Una descripción detallada del producto."
         android:ems="10"
         android:gravity="center"
-        android:hint="Descripción"
+        android:hint="Marca"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -71,7 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Añadir"
-        app:layout_constraintTop_toBottomOf="@+id/etDescripcionInventario"
+        app:layout_constraintTop_toBottomOf="@+id/etMarca"
         tools:layout_editor_absoluteX="161dp" />
 
     <GridView

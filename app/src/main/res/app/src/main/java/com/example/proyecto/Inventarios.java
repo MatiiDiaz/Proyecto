@@ -35,7 +35,7 @@ public class Inventarios extends AppCompatActivity implements View.OnClickListen
         lvInventario = findViewById(R.id.gvInventario);
         etNombreInventario = findViewById(R.id.etNombreInventario);
         etCantidad = findViewById(R.id.etCantidad);
-        etDescripcionInventario = findViewById(R.id.etDescripcionInventario);
+        etDescripcionInventario = findViewById(R.id.etMarca);
     }
 
     @Override
