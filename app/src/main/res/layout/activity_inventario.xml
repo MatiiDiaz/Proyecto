@@ -76,7 +76,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etCantidad"
-        tools:text="Descripción" />
+        tools:text="Marca" />
 
     <Button
         android:id="@+id/button_añadir_inventario"
@@ -87,17 +87,23 @@
         app:layout_constraintTop_toBottomOf="@+id/etMarca"
         tools:layout_editor_absoluteX="161dp" />
 
-    <GridView
-        android:id="@+id/gvInventario"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvInventario"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="8dp"
-        android:gravity="center"
-        android:horizontalSpacing="10dp"
-        android:numColumns="3"
-        android:verticalSpacing="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/svBuscar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <SearchView
+        android:id="@+id/svBuscar"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_añadir_inventario" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

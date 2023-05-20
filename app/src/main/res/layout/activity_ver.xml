@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VerActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Detalle Producto"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="Nombre"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="Nombre del Producto"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombre"
+        android:labelFor="@+id/tvNombre"/>
+
+    <TextView
+        android:id="@+id/tvCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Cantidad"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <EditText
+        android:id="@+id/etCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:contentDescription="Cantidad del Producto"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/tvCantidad"
+        tools:layout_editor_absoluteX="16dp"
+        android:labelFor="@+id/tvCantidad" />
+
+    <TextView
+        android:id="@+id/tvPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Precio"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/etCantidad"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <EditText
+        android:id="@+id/etPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:contentDescription="Precio del Producto"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/tvPrecio"
+        android:labelFor="@+id/tvPrecio" />
+
+    <TextView
+        android:id="@+id/tvMarca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Marca"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/etPrecio"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/etMarca"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="Marca del producto."
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMarca"
+        android:labelFor="@+id/tvMarca" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Añadir"
+        app:layout_constraintTop_toBottomOf="@+id/etMarca"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_add" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fabEditar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

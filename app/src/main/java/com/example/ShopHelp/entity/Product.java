@@ -15,14 +15,14 @@ import com.example.ShopHelp.R;
 import java.util.Date;
 
 public class Product {
-    private int id_producto, amount_producto, quantity_producto;
-    private String name_producto, marca_producto;
+    //private int id_producto, amount_producto, quantity_producto;
+    private String id_producto, amount_producto, quantity_producto, name_producto, marca_producto;
 
     public Product() {
 
     }
 
-    public Product(int id_producto, int amount_producto, int quantity_producto, String name_producto, String marca_producto) {
+    public Product(String id_producto, String amount_producto, String quantity_producto, String name_producto, String marca_producto) {
         this.id_producto = id_producto;
         this.amount_producto = amount_producto;
         this.quantity_producto = quantity_producto;
@@ -30,27 +30,27 @@ public class Product {
         this.marca_producto = marca_producto;
     }
 
-    public int getId_producto() {
+    public String getId_producto() {
         return id_producto;
     }
 
-    public void setId_producto(int id_producto) {
+    public void setId_producto(String id_producto) {
         this.id_producto = id_producto;
     }
 
-    public int getAmount_producto() {
+    public String getAmount_producto() {
         return amount_producto;
     }
 
-    public void setAmount_producto(int amount_producto) {
+    public void setAmount_producto(String amount_producto) {
         this.amount_producto = amount_producto;
     }
 
-    public int getQuantity_producto() {
+    public String getQuantity_producto() {
         return quantity_producto;
     }
 
-    public void setQuantity_producto(int quantity_producto) {
+    public void setQuantity_producto(String quantity_producto) {
         this.quantity_producto = quantity_producto;
     }
 

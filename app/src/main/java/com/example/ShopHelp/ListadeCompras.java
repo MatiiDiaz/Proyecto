@@ -44,8 +44,6 @@ public class ListadeCompras extends AppCompatActivity implements View.OnClickLis
     }
 
     public void onClick(View v) {
-        DBHelper dbHelper = new DBHelper(ListadeCompras.this);
-        SQLiteDatabase database = dbHelper.getWritableDatabase();
         if (v.getId() == R.id.button_añadir_compra) {
             String nombre = etNombreCompra.getText().toString().trim();
             String pagado = etTotalPagado.getText().toString().trim();

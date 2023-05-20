@@ -9,7 +9,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/tvProducto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -17,7 +17,7 @@
         tools:text="Producto" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/tvPrecio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -25,7 +25,7 @@
         tools:text="$000.000" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/tvMarca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
